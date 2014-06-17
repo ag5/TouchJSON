@@ -38,7 +38,7 @@
                      BuildableIdentifier = "primary"
                      BlueprintIdentifier = "45B15E100947D97B00AE66EB"
                      BuildableName = "UnitTests.octest"
-                     BlueprintName = "UnitTests"
+                     BlueprintName = "TouchJSON-tests"
                      ReferencedContainer = "container:TouchJSON.xcodeproj">
                   </BuildableReference>
                </EnvironmentBuildable>
@@ -52,7 +52,7 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "45B15E100947D97B00AE66EB"
                BuildableName = "UnitTests.octest"
-               BlueprintName = "UnitTests"
+               BlueprintName = "TouchJSON-tests"
                ReferencedContainer = "container:TouchJSON.xcodeproj">
             </BuildableReference>
          </TestableReference>
