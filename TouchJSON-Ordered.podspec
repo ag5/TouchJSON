@@ -7,7 +7,6 @@ Pod::Spec.new do |s|
   s.source           = { :git => "git@github.com:ag5/TouchJSON.git", :tag => s.version.to_s }
   s.homepage         = "https://github.com/ag5/TouchJSON"
 
-  # s.platform     = :ios, '5.0'
   s.ios.deployment_target = '5.0'
   s.osx.deployment_target = '10.6'
   s.requires_arc = true

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0500"
+   LastUpgradeVersion = "0510"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "45B15E100947D97B00AE66EB"
-               BuildableName = "UnitTests.octest"
+               BuildableName = "TouchJSON-tests.octest"
                BlueprintName = "TouchJSON-tests"
                ReferencedContainer = "container:TouchJSON.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "45B15E100947D97B00AE66EB"
-               BuildableName = "UnitTests.octest"
+               BuildableName = "TouchJSON-tests.octest"
                BlueprintName = "TouchJSON-tests"
                ReferencedContainer = "container:TouchJSON.xcodeproj">
             </BuildableReference>

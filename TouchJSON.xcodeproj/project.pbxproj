@@ -21,10 +21,10 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		0E655F1069E24570A1CAE5F1 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 73CE078E41B647F5ACEDE523 /* libPods.a */; };
 		4531137A0A64EE5400A970C2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29B97325FDCFA39411CA2CEA /* Foundation.framework */; };
 		B3CBDC8D1950629D00B1DDBD /* CJSONDeserializer_UnitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B3CBDC891950629D00B1DDBD /* CJSONDeserializer_UnitTests.m */; };
 		B3CBDC8E1950629D00B1DDBD /* CJSONSerializer_UnitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B3CBDC8B1950629D00B1DDBD /* CJSONSerializer_UnitTests.m */; };
-		B3CBDC8F1950629D00B1DDBD /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B3CBDC8C1950629D00B1DDBD /* Info.plist */; };
 		B3CBDC901950635700B1DDBD /* CJSONDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = B3CBDC7D1950626900B1DDBD /* CJSONDeserializer.m */; };
 		B3CBDC911950635700B1DDBD /* CJSONSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = B3CBDC7F1950626900B1DDBD /* CJSONSerializer.m */; };
 		B3CBDC921950635700B1DDBD /* NSDictionary_JSONExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B3CBDC821950626900B1DDBD /* NSDictionary_JSONExtensions.m */; };
@@ -43,6 +43,8 @@
 /* Begin PBXFileReference section */
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		45B15E110947D97B00AE66EB /* TouchJSON-tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TouchJSON-tests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		73CE078E41B647F5ACEDE523 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8613D5E37E344ADEB8644A87 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		B3CBDC7C1950626900B1DDBD /* CJSONDeserializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CJSONDeserializer.h; path = Classes/CJSONDeserializer.h; sourceTree = SOURCE_ROOT; };
 		B3CBDC7D1950626900B1DDBD /* CJSONDeserializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CJSONDeserializer.m; path = Classes/CJSONDeserializer.m; sourceTree = SOURCE_ROOT; };
 		B3CBDC7E1950626900B1DDBD /* CJSONSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CJSONSerializer.h; path = Classes/CJSONSerializer.h; sourceTree = SOURCE_ROOT; };
@@ -63,6 +65,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4531137A0A64EE5400A970C2 /* Foundation.framework in Frameworks */,
+				0E655F1069E24570A1CAE5F1 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +87,7 @@
 				4505886B099952F600FB865F /* Tests */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
+				8613D5E37E344ADEB8644A87 /* Pods.xcconfig */,
 			);
 			name = Sample;
 			sourceTree = "<group>";
@@ -93,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+				73CE078E41B647F5ACEDE523 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -132,9 +137,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 45B15E130947D97C00AE66EB /* Build configuration list for PBXNativeTarget "TouchJSON-tests" */;
 			buildPhases = (
+				D0E8EF928A4142E482E25177 /* Check Pods Manifest.lock */,
 				45B15E0C0947D97B00AE66EB /* Resources */,
 				45B15E0D0947D97B00AE66EB /* Sources */,
 				45B15E0E0947D97B00AE66EB /* Frameworks */,
+				F33CDCE85E3D4FB49AE9598C /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -151,7 +158,7 @@
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0510;
 			};
 			buildConfigurationList = 45FC538608FBF91C0091ABDF /* Build configuration list for PBXProject "TouchJSON" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -178,11 +185,43 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3CBDC8F1950629D00B1DDBD /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D0E8EF928A4142E482E25177 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F33CDCE85E3D4FB49AE9598C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		45B15E0D0947D97B00AE66EB /* Sources */ = {
@@ -232,6 +271,7 @@
 		};
 		45B15E140947D97C00AE66EB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8613D5E37E344ADEB8644A87 /* Pods.xcconfig */;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
@@ -265,6 +305,7 @@
 		};
 		45B15E150947D97C00AE66EB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8613D5E37E344ADEB8644A87 /* Pods.xcconfig */;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
@@ -296,7 +337,6 @@
 		45FC538708FBF91C0091ABDF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
 				CLANG_ANALYZER_SECURITY_FLOATLOOPCOUNTER = YES;
 				CLANG_ANALYZER_SECURITY_INSECUREAPI_RAND = YES;
 				CLANG_ANALYZER_SECURITY_INSECUREAPI_STRCPY = YES;
@@ -339,7 +379,6 @@
 		45FC538808FBF91C0091ABDF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
 				CLANG_ANALYZER_SECURITY_FLOATLOOPCOUNTER = YES;
 				CLANG_ANALYZER_SECURITY_INSECUREAPI_RAND = YES;
 				CLANG_ANALYZER_SECURITY_INSECUREAPI_STRCPY = YES;

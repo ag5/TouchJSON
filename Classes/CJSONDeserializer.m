@@ -28,6 +28,7 @@
 //
 
 #import "CJSONDeserializer.h"
+#import "OrderedDictionary.h"
 
 NSString *const kJSONDeserializerErrorDomain = @"CJSONDeserializerErrorDomain";
 
@@ -131,7 +132,7 @@ typedef struct
         {
         return (NULL);
         }
-    NSDictionary *theDictionary = NULL;
+    OrderedDictionary *theDictionary = NULL;
     [self _scanJSONDictionary:&theDictionary sharedKeySet:NULL error:outError];
     return(theDictionary);
     }
@@ -355,7 +356,7 @@ typedef struct
     return(theResult);
     }
 
-- (BOOL)_scanJSONDictionary:(NSDictionary **)outDictionary sharedKeySet:(id *)ioSharedKeySet error:(NSError **)outError
+- (BOOL)_scanJSONDictionary:(OrderedDictionary **)outDictionary sharedKeySet:(id *)ioSharedKeySet error:(NSError **)outError
     {
     NSUInteger theScanLocation = _current - _start;
 
@@ -370,14 +371,14 @@ typedef struct
         return (NO);
         }
 
-    NSMutableDictionary *theDictionary = NULL;
+    OrderedDictionary *theDictionary = NULL;
     if (ioSharedKeySet != NULL && *ioSharedKeySet != NULL)
         {
-        theDictionary = [NSMutableDictionary dictionaryWithSharedKeySet:*ioSharedKeySet];
+        theDictionary = [OrderedDictionary dictionaryWithSharedKeySet:*ioSharedKeySet];
         }
     else
         {
-        theDictionary = [NSMutableDictionary dictionary];
+        theDictionary = [OrderedDictionary dictionary];
         }
 
     if (theDictionary == NULL)
