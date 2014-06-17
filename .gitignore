@@ -5,6 +5,7 @@
 *.pbxuser
 *.perspectivev3
 xcuserdata/
+*.xcworkspace
 
 build
 Support/NewBenchmark/build/
