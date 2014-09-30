@@ -10,29 +10,29 @@
 	<string>TouchJSON</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>AC70C687-6254-400B-8F3E-796F4D517D8D</key>
+		<key>BADA5BBA47957E79D23EEC2252C812D67AB5A5CA</key>
 		<string>ssh://github.com/ag5/TouchJSON.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>Support/TouchJSON.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>AC70C687-6254-400B-8F3E-796F4D517D8D</key>
+		<key>BADA5BBA47957E79D23EEC2252C812D67AB5A5CA</key>
 		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>ssh://github.com/ag5/TouchJSON.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>AC70C687-6254-400B-8F3E-796F4D517D8D</string>
+	<string>BADA5BBA47957E79D23EEC2252C812D67AB5A5CA</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>AC70C687-6254-400B-8F3E-796F4D517D8D</string>
+			<string>BADA5BBA47957E79D23EEC2252C812D67AB5A5CA</string>
 			<key>IDESourceControlWCCName</key>
 			<string>TouchJSON</string>
 		</dict>

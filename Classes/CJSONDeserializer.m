@@ -374,7 +374,7 @@ typedef struct
     OrderedDictionary *theDictionary = NULL;
     if (ioSharedKeySet != NULL && *ioSharedKeySet != NULL)
         {
-        theDictionary = [OrderedDictionary dictionaryWithSharedKeySet:*ioSharedKeySet];
+        theDictionary = (OrderedDictionary*)[OrderedDictionary dictionaryWithSharedKeySet:*ioSharedKeySet];
         }
     else
         {
