@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "TouchJSON-Ordered"
-  s.version          = '1.3.2'
+  s.version          = '1.3.3'
   s.summary          = "A fork of TouchJSON that deserializes into OrderedDictionaries"
   s.license          = 'FreeBSD'
   s.author           = { "Jonathan Wight" => "schwa@toxicsoftware.com", "Leo Schweizer" => "leo@ag5.nl" }
